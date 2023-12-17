@@ -1,0 +1,1 @@
+Nesse projeto a conexão com o proxy é feito no main.py, o restante do projeto está no servidor django que está na mesma raiz do main.py

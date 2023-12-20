@@ -1,11 +1,47 @@
 # Projeto de Conexão com Proxy e Servidor Django
 
-## Executando a conexão com o prxy
+## Primeiros passos
+
+Para baixar o programa digite o comando
+
+```bash
+git clone https://github.com/emanuelthiago06/projeto-disciplina-iot.git
+```
+Antes de baixar as bibliotecas é recomendado criar uma venv para separar as versões e bibliotecas do projeto do python do seu sistema, ela é instalada com o seguinte comando:
+
+```bash
+python3 -m venv venv
+```
+
+Uma vez ela instalada é preciso ativa-la para isso digite o comando:
+
+Linux/MacOs:
+
+```bash
+source venv/bin/activate
+```
+
+Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Feito isso agora será falta a instalação das bibliotecas, se voce decidiu pular os passos para fazer a venv a instalação das bibliotecas será feita no python do seu sistema, não nos responsabilizamos por problemas.
+
+```bash
+pip install -r requirements.txt
+```
+
+## Executando a conexão com o proxy
 
 O código responsável por estabelecer a comunicação com o proxy e o servidor está contido no arquivo `main.py`.
 
 Para executar ele basta rodar ele, e se for o desejo mudar os valores de "value" e "id" para os valores e id o sensor a ser enviado
 
+```bash
+python3 main.py
+```
 
 ## Executando o servidor
 

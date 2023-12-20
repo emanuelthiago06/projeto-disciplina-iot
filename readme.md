@@ -50,7 +50,14 @@ Para rodar o servidor execute o comando python3 manage.py runserver
 Com o servidor funcionando navegue para /api/initial-page, lá é preciso colocar o id do sensor a ser visualizado, feito isso clicar no botão e então será feito um redirecionamento para a página de vi
 sualização do gráfico
 
-O servidor só recebe o dado via requisição, não existe forma de colocar os dados na página web, para fazer a requisição é só fazer um POST para o endereço /api/add-point com o payload contendo a valor do sensor "value" e o identificador do sensor "id"
+O servidor só recebe o dado via requisição, não existe forma de colocar os dados na página web, para fazer a requisição é só fazer um POST para o endereço /api/add-point com o payload contendo a valor do sensor "value" e o identificador do sensor "id", como mostrado a seguir:
+
+```json
+{
+"value": "valor do sensor",
+"id": "id do sensor",
+}
+```
 
 Para iniciar o servidor, utilize o seguinte comando:
 

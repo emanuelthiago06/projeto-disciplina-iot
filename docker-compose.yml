@@ -1,6 +1,18 @@
-version: '3'
+version: '3.8'
+
 services:
+  web-server:
+    build:
+      context: ./web-server
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+
   proxy-rmq-web:
-    build: .
-      - "5672:5672" # read rmq
-      - "8000:8000" # web
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "5672:5672"
+      - "5671:5671"
+

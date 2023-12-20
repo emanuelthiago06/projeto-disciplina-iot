@@ -11,7 +11,7 @@ def initial_page(request):
         form = YourForm(request.POST)
         if form.is_valid():
             # Redirect to the other page with form data
-            return HttpResponseRedirect('/api/graph/?field=' + form.cleaned_data['field'])
+            return HttpResponseRedirect('/api/graph/?field=' + form.cleaned_data['id_do_sensor'])
     else:
         form = YourForm()
 

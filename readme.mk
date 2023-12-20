@@ -16,3 +16,5 @@ sualização do gráfico
 
 O servidor só recebe o dado via requisição, não existe forma de colocar os dados na página web, para fazer a requisição é só fazer um POST para o endereço /api/add-point com o payload contendo a valor do sensor "value" e o identificador do sensor "id"
 
+```bash
+python3 manage.py runserver

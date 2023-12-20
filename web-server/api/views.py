@@ -11,7 +11,7 @@ def initial_page(request):
         form = YourForm(request.POST)
         if form.is_valid():
             # Redirect to the other page with form data
-            return HttpResponseRedirect('/api/graph/?field=' + form.cleaned_data['id_do_sensor'])
+            return HttpResponseRedirect('/iot/graph/?field=' + form.cleaned_data['id_do_sensor'])
     else:
         form = YourForm()
 
@@ -51,12 +51,19 @@ def view_graph(request):
 
 @csrf_exempt
 def add_point(request):
-    if request.method == "POST":
-        value = float(request.POST.get('value', "id"))
-        id = int(request.POST.get("id"))
-        print(value)
-        new_entry = Sensor(id_personal=id,value=value, created_at= timezone.now())
-        new_entry.save()
+    try:
+        if request.method == "POST":
+            value = float(request.POST.get('value', "id"))
+            id = int(request.POST.get("id"))
+            print(value)
+            new_entry = Sensor(id_personal=id,value=value, created_at= timezone.now())
+            new_entry.save()
+            return JsonResponse({
+                "mensagem": "Dado armazenado com sucesso",
+                "status" : 200
+            })
+    except:
         return JsonResponse({
-            "status" : 200
-        })
+                "mensagem": "Erro no request",
+                "status" : 400
+            })

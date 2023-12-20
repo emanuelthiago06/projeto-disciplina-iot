@@ -5,4 +5,4 @@ COPY . .
 EXPOSE 8000
 EXPOSE 5672
 EXPOSE 5671
-CMD ["python", "main.py"]
+CMD ["python", "main.py", "195.35.17.231"]

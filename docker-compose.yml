@@ -13,6 +13,5 @@ services:
       context: ./proxy
       dockerfile: Dockerfile
     ports:
-      - "5672:5672"
       - "5671:5671"
 

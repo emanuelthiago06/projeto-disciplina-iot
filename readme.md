@@ -1,6 +1,6 @@
 # Projeto de Conexão com Proxy e Servidor Django
 
-## Executando a conexão com o proxy
+## Executando a conexão com o prxy
 
 O código responsável por estabelecer a comunicação com o proxy e o servidor está contido no arquivo `main.py`.
 
@@ -15,6 +15,8 @@ Com o servidor funcionando navegue para /api/initial-page, lá é preciso coloca
 sualização do gráfico
 
 O servidor só recebe o dado via requisição, não existe forma de colocar os dados na página web, para fazer a requisição é só fazer um POST para o endereço /api/add-point com o payload contendo a valor do sensor "value" e o identificador do sensor "id"
+
+Para iniciar o servidor, utilize o seguinte comando:
 
 ```bash
 python3 manage.py runserver

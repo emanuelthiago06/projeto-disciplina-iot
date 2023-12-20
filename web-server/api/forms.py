@@ -1,4 +1,4 @@
 from django import forms
 
 class YourForm(forms.Form):
-    field = forms.CharField()
+    id_do_sensor = forms.CharField()

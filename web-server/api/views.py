@@ -33,7 +33,7 @@ def initial_page(request):
     return render(request, 'initial_page.html', {'form': form})
 
 def test_model(db):
-    loaded_model = keras.models.load_model("my_model.h5")
+    loaded_model = keras.models.load_model("detection_model.h5")
     predictions = loaded_model.predict(db)
     predit = determine_infart(predictions)
     return predit

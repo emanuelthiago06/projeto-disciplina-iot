@@ -6,7 +6,7 @@ from datetime import datetime
 import requests
 
 RMQ_HOST = "195.35.17.231"
-POST_URL = f"http://{sys.argv[1]}:8000/api/add-point/"
+POST_URL = f"http://{sys.argv[1]}:{sys.argv[2]}/iot/add-point/"
 
 
 # container:  rmq 

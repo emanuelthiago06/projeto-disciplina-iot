@@ -1,6 +1,6 @@
-#Projeto de Conexão com Proxy e Servidor Django
+# Projeto de Conexão com Proxy e Servidor Django
 
-## Executando a conexão com o prxy
+## Executando a conexão com o proxy
 
 O código responsável por estabelecer a comunicação com o proxy e o servidor está contido no arquivo `main.py`.
 

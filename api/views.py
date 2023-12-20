@@ -43,7 +43,8 @@ def view_graph(request):
         'data': data,
         'labels': dates,
         'below_1_count': len(bellow_1_count),
-        'average_value': 0 if not data else sum(data)/len(data)
+        'average_value': 0 if not data else sum(data)/len(data),
+        'status': "NORMAL"
     }
     return render(request, 'plot.html', context)
 

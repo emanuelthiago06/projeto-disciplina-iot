@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 import requests
 
-RMQ_HOST = "195.35.17.231"
+RMQ_HOST = sys.argv[3]
 POST_URL = f"http://{sys.argv[1]}:{sys.argv[2]}/iot/add-point/"
 
 

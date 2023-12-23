@@ -2,12 +2,7 @@
 
 ## Primeiros passos
 
-Para baixar o programa digite o comando
-
-```bash
-git clone https://github.com/emanuelthiago06/projeto-disciplina-iot.git
-```
-Antes de baixar as bibliotecas é recomendado criar uma venv para separar as versões e bibliotecas do projeto do python do seu sistema, ela é instalada com o seguinte comando:
+Antes de instalar as bibliotecas é recomendado criar uma venv para separar as versões e bibliotecas do projeto do python do seu sistema, ela é instalada com o seguinte comando:
 
 ```bash
 python3 -m venv venv
